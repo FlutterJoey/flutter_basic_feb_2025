@@ -1,2 +1,5 @@
 app
 assignments
+
+# FVM Version Cache
+.fvm/
