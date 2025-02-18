@@ -41,8 +41,11 @@ class MyScreen extends StatelessWidget {
             ),
           ),
           UpperLeftWithName(name: name),
-          Center(
-            child: SizedBox(
+          Align(
+            alignment: Alignment(0, -0.5),
+            child: Container(
+              padding: EdgeInsets.all(16),
+              color: Colors.blue,
               height: 200,
               width: 200,
               child: UpperLeftWithName(name: "Martijn"),
@@ -83,12 +86,14 @@ class TitleText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text,
-      textAlign: TextAlign.center,
-      style: TextStyle(
-        fontSize: 20,
-        fontWeight: FontWeight.bold,
+    return SizedBox(
+      child: Text(
+        text,
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }
