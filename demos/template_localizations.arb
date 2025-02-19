@@ -1,0 +1,19 @@
+{
+    "test": "test",
+    "@test": {
+        "description": "test message"
+    },
+    "characterSelectionTitle": "Character Selection",
+    "@characterSelectionTitle": {
+        "description": "Title of the character selection screen"
+    },
+    "monsterCount": "{monsterCount, plural, =1{1 Monster} other{{monsterCount} Monsters}}",
+    "@monsterCount": {
+        "description": "Display the amount of selected monsters",
+        "placeholders": {
+            "monsterCount": {
+                "type": "int"
+            }
+        }
+    }
+}
