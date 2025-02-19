@@ -100,7 +100,6 @@ class DetailScreen extends StatelessWidget {
                 },
                 child: Text("Go back"),
               ),
-              SizedBox(height: 20),
               FilledButton(
                 onPressed: () async {
                   Future.delayed(
