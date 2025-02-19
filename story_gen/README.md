@@ -31,7 +31,8 @@ Simply install the package by adding the following to the pubspec.yaml:
 ```yaml
 dependencies:
   story_gen:
-    git: https://github.com/FlutterJoey/flutter_basic_feb_2025.git
+    git: 
+      url: https://github.com/FlutterJoey/flutter_basic_feb_2025.git
       path: story_gen/
 ```
 
