@@ -103,11 +103,12 @@ class DetailScreen extends StatelessWidget {
               SizedBox(height: 20),
               FilledButton(
                 onPressed: () async {
-                  var navigator = Navigator.of(context);
                   Future.delayed(
                     Duration(seconds: 5),
                     () {
-                      navigator.pop();
+                      if (context.mounted) {
+                        Navigator.of(context).pop();
+                      }
                     },
                   );
                   print("Wait until user gives an answer");
@@ -121,7 +122,9 @@ class DetailScreen extends StatelessWidget {
                   if (result == null) return;
 
                   if (result == "yes") {
-                    navigator.pop();
+                    if (context.mounted) {
+                      Navigator.of(context).pop();
+                    }
                   }
                 },
                 child: Text("Show dialog"),
