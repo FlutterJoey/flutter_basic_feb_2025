@@ -39,6 +39,7 @@ dependencies:
 ## Usage
 
 ```dart
+  import 'package:story_gen/story_gen.dart' as storyGen;
   var generator = HorrorStoryGenerator();
   generator.setScene(
     Scene(

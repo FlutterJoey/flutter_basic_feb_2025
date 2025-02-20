@@ -99,6 +99,9 @@ class AffordableRecipeList extends StatelessWidget {
     return ListView.builder(
       scrollDirection: Axis.horizontal,
       itemBuilder: (context, index) {
+        if (index == 0) {
+          return SizedBox(width: 8);
+        }
         return Container(
           height: 200,
           width: 220,
